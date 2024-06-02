@@ -1,0 +1,62 @@
+:root body {
+    background-color: rgb(208, 233, 255);
+}
+
+html {
+    height: 100%; /* Set body and html height to 100% viewport height */
+    margin: 0; /* Remove any default margins */
+}
+
+.container {
+    background-color: rgb(208, 233, 255);
+    flex-direction: column; 
+    padding-top: 30px;
+    font-weight: 600;
+    color: rgb(25, 37, 112);
+}  
+
+nav {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#logo {
+    height: 160px;
+    width: 439px;
+}
+
+#titleBox {
+    text-align: center;
+}
+
+#title {
+    height: 55px;
+    width: 588px;
+    margin: 13rem auto 2rem;
+}
+
+button {
+    text-align: right;
+}
+
+footer {
+    background-color: rgb(236, 64, 122);
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+#copyright {
+    margin-left: 30px; 
+    color: antiquewhite;
+}
+
+#github {
+    color: cyan;
+}
