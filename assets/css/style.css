@@ -36,11 +36,17 @@ nav {
 #title {
     height: 55px;
     width: 588px;
-    margin: 13rem auto 2rem;
+    margin-top: 13rem;
+}
+
+h3 {
+    padding-bottom: 20px;
+    text-decoration: underline;
 }
 
 button {
     text-align: right;
+    font-weight: bold;
 }
 
 footer {
@@ -48,9 +54,14 @@ footer {
     padding: 10px;
     text-align: left;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    margin-top: 30px;
   }
+
+/* footer @media screen {
+    position: relative;
+} */
 
 #copyright {
     margin-left: 30px; 
