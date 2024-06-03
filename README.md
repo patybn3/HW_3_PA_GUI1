@@ -38,16 +38,25 @@ size. <br>
 
 ## File hierarchy
 
-HW3/<br>
--- assets/<br>
---- css/<br>
----- style file<br>
---- script/<br>
----- javeScript code<br>
--- media/<br>
---- all images<br>
--- html riles<br>
--- readme file<br>
+HW3/
+
+-- assets/
+
+--- css/
+
+---- style file
+
+--- script/
+
+---- javeScript code
+
+-- media/
+
+--- all images
+
+-- html riles
+
+-- readme file
 
 [x] HTML5 Markup Validation Service: http://validator.w3.org -----> one <strong>ERROR</strong>:
 
@@ -60,8 +69,11 @@ The error below is not quite an error. This empty div is holding the space for t
 ```
 <img width="931" alt="Screenshot 2024-06-03 at 2 14 15 PM" src="https://github.com/patybn3/HW_3_PA_GUI1/assets/59259041/ce5324a8-590e-4b3b-925a-a5ab0e51fc76">
 
-
+.
+.
 [x] W3C CSS Validation Service: http://jigsaw.w3.org/css-validator
+
+---
 
 ## Wireframe
 
@@ -69,6 +81,8 @@ The error below is not quite an error. This empty div is holding the space for t
 
 <img width="1435" alt="Screenshot 2024-06-03 at 12 19 08 PM" src="https://github.com/patybn3/HW_3_PA_GUI1/assets/59259041/4333cf1c-897d-456f-b1d0-d18f1148bb93">
 
+
+---
 
 ## Specs:
 
@@ -80,6 +94,7 @@ Suitable for all mobile and desktop devices
 
 <img width="227" alt="Screenshot 2024-06-03 at 12 17 38 PM" src="https://github.com/patybn3/HW_3_PA_GUI1/assets/59259041/5e0a9d65-7b96-4217-a532-92886ace1029">
 
+---
 
 ### Plan:
 
