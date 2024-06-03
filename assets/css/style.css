@@ -35,7 +35,7 @@ nav {
 
 #title {
     height: 55px;
-    width: 588px;
+    width: auto;
     margin-top: 13rem;
 }
 
@@ -71,3 +71,29 @@ footer {
 #github {
     color: cyan;
 }
+
+/* table.html */
+
+#tableBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tableContent {
+    width: fit-content;
+    text-align: center;
+}
+
+table {
+    width: auto;
+}
+
+#tableImage {
+    width: 25px; /* Set the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* #resetButton {
+    margin-top: 40px;
+} */
