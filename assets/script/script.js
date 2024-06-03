@@ -9,10 +9,37 @@ function handleSubmit(event) {
     event.preventDefault();
 
     // Get form inputs
-    const multiplicandFrom = document.getElementById("multiplicandFrom").value;
-    const multiplicandTo = document.getElementById("multiplicandTo").value;
-    const multiplierFrom = document.getElementById("multiplierFrom").value;
-    const multiplierTo = document.getElementById("multiplierTo").value;
+    var multiplicandFrom = document.getElementById("multiplicandFrom").value;
+    var multiplicandTo = document.getElementById("multiplicandTo").value;
+    var multiplierFrom = document.getElementById("multiplierFrom").value;
+    var multiplierTo = document.getElementById("multiplierTo").value;
+
+     // Check if inputs are within the specified range
+     if (multiplicandFrom < 1 || multiplicandFrom > 50 ||
+        multiplicandTo < 1 || multiplicandTo > 50 ||
+        multiplierFrom < 1 || multiplierFrom > 50 ||
+        multiplierTo < 1 || multiplierTo > 50) {
+        document.getElementById('errorMessage').innerText = "Please enter numbers between 1 and 50.";
+        document.getElementById('errorMessage').classList.remove('hidden');
+        document.getElementById('errorMessage').style.display = 'block';
+
+        // fade
+        setTimeout(function() {
+            document.getElementById('errorMessage').classList.add('hidden');
+        }, 3000);
+        return;
+    }
+
+    // Hide the error message if inputs are valid
+    document.getElementById('errorMessage').classList.add('hidden');
+
+    // here we wanna make sure the numbers are calculated in ascending order even if the user enters in descending order
+    if(multiplicandFrom > multiplicandTo) {
+        [multiplicandFrom, multiplicandTo] = [multiplicandTo, multiplicandFrom];
+    }
+    if(multiplierFrom > multiplierTo) {
+        [multiplierFrom, multiplierTo] = [multiplierTo, multiplicandFrom]
+    }
 
     // Store form inputs in localStorage
     localStorage.setItem("multiplicandFrom", multiplicandFrom);
@@ -36,11 +63,6 @@ function generateTable() {
     const multiplicandTo = parseInt(localStorage.getItem("multiplicandTo"));
     const multiplierFrom = parseInt(localStorage.getItem("multiplierFrom"));
     const multiplierTo = parseInt(localStorage.getItem("multiplierTo"));
-
-    if((multiplicandFrom >= 1 && multiplicandFrom <= 50) ||
-        (multiplicandTo >= 1 && multiplicandTo <= 50) ||
-        (multiplierFrom >= 1 && multiplierFrom <= 50) ||
-        (multiplierTo >= 1 && multiplierTo <= 50 )) {
 
     const table = document.createElement("table");
     table.classList.add("table", "table-bordered");
@@ -71,11 +93,6 @@ function generateTable() {
 
     document.getElementById("tableContent").innerHTML = "";
     document.getElementById("tableContent").appendChild(table);
-}
-else {
-    const alert = bootstrap.Alert.getOrCreateInstance('#outOfBounds')
-    alert.close()
-}
 }
 
 function resetTable() {

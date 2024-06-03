@@ -31,7 +31,31 @@ nav {
 
 #titleBox {
     text-align: center;
+
 }
+
+.fadeOut {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+#errorMessage {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: auto;
+    z-index: 1;
+    opacity: 1;
+    transition: opscity 0.5s ease-out;
+}
+
+#errorMessage.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 
 #title {
     height: 55px;
@@ -56,12 +80,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    margin-top: 30px;
   }
-
-/* footer @media screen {
-    position: relative;
-} */
 
 #copyright {
     margin-left: 30px; 
@@ -78,6 +97,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
+    margin: 0 30px;
 }
 
 #tableContent {
@@ -89,11 +110,19 @@ table {
     width: auto;
 }
 
+table thead:first-child {
+    font-weight: bold;
+}
+
+table tbody tr td:first-child {
+    font-weight: bold;
+}
+
 #tableImage {
     width: 25px; /* Set the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
 
-/* #resetButton {
+#resetButton {
     margin-top: 40px;
-} */
+}
