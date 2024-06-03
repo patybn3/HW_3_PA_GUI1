@@ -45,15 +45,15 @@ function handleSubmit(event) {
     let multiplierFrom = parseInt(document.getElementById("multiplierFrom").value);
     let multiplierTo = parseInt(document.getElementById("multiplierTo").value);
 
-    // The range I selected is between 1 and 50 only - Table can handle any range, but I figure I should add this
+    // The range I selected is between -50 and 50 only - Table can handle any range, but I figure I should add this
     // in order to generate an error message
-    if (multiplicandFrom < 1 || multiplicandFrom > 50 ||
-        multiplicandTo < 1 || multiplicandTo > 50 ||
-        multiplierFrom < 1 || multiplierFrom > 50 ||
-        multiplierTo < 1 || multiplierTo > 50) {
+    if (multiplicandFrom < -50 || multiplicandFrom > 50 ||
+        multiplicandTo < -50 || multiplicandTo > 50 ||
+        multiplierFrom < -50 || multiplierFrom > 50 ||
+        multiplierTo < -50 || multiplierTo > 50) {
         
         // error message function
-        error("Please Enter Numbers Between 1 and 50 Only.");
+        error("Please Enter Numbers Between -50 and 50 Only.");
         return;
     }
 
@@ -62,7 +62,7 @@ function handleSubmit(event) {
         isNaN(multiplierFrom) || isNaN(multiplierTo)) {
         
         // error message function
-        error("Error. All fields must contain a number from 1 to 50.");
+        error("Error. All fields must contain a number from -50 to 50.");
         return;
     }
 
