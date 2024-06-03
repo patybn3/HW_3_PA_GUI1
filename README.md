@@ -35,3 +35,9 @@ use bootstrap table
 
 logic:
 get table fields, increment while placing the numbers
+
+
+- bug:
+table generating when all fields are empty
+- separate alert into a different function to reuse it
+validate code
