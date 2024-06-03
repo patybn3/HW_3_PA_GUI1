@@ -3,7 +3,7 @@
 ## Student: Patricia Antlitz
 ## Date: 06/01/2024
 
-### Assignment:
+## Assignment:
 
 For this assignment you will create a table completely dynamically based on parameters entered
 in an HTML form. First, you must create a form that accepts the starting and ending numbers for
@@ -38,18 +38,18 @@ size. <br>
 
 ## File hierarchy
 
-HW3/
--- assets/
---- css/
----- style file
---- script/
----- javeScript code
--- media/
---- all images
--- html riles
--- readme file
+HW3/<br>
+-- assets/<br>
+--- css/<br>
+---- style file<br>
+--- script/<br>
+---- javeScript code<br>
+-- media/<br>
+--- all images<br>
+-- html riles<br>
+-- readme file<br>
 
-[x] HTML5 Markup Validation Service: http://validator.w3.org -----> one ERROR:
+[x] HTML5 Markup Validation Service: http://validator.w3.org -----> one <strong>ERROR</strong>:
 
 The error below is not quite an error. This empty div is holding the space for the table under table.html:
 
@@ -63,14 +63,14 @@ The error below is not quite an error. This empty div is holding the space for t
 
 [x] W3C CSS Validation Service: http://jigsaw.w3.org/css-validator
 
-### Wireframe
+## Wireframe
 
 <img width="1440" alt="Screenshot 2024-06-03 at 12 18 06 PM" src="https://github.com/patybn3/HW_3_PA_GUI1/assets/59259041/87c833e0-5757-4e0e-b14f-e41a446aff61">
 
 <img width="1435" alt="Screenshot 2024-06-03 at 12 19 08 PM" src="https://github.com/patybn3/HW_3_PA_GUI1/assets/59259041/4333cf1c-897d-456f-b1d0-d18f1148bb93">
 
 
-### Specs:
+## Specs:
 
 Suitable for all mobile and desktop devices
 
@@ -131,7 +131,7 @@ get table fields, increment while placing the numbers
 
 to run the source code, open the html file on your browser, or run the command `python3 -m http.server` on the terminal inside of the repository's folder
 
-### Technologies Used:
+## Technologies Used:
 
 - HTML5
 - CSS 5
