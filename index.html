@@ -1,3 +1,23 @@
+<!--
+  Homework 3 GUI 1 - UML
+  author: Patricia Antlitz
+  date: 2024-06-01
+  File: index.html
+  GUI Assignment: Creating a webpage that can generate a multiplication table based on user entries
+  Professor: Wenjin Zhou, UMass Lowell Computer Science, wenjin_zhou@uml.edu
+
+  On this file:
+  - Font
+  - Favicon
+  - Navbar + navbar logo
+  - Title image
+  - Initial fomr
+  - div id content is for secondary html file "table.html"
+  - footer
+
+  Copyright (c) 2024 by Patricia Antlitz.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +43,7 @@
     <div id="titleBox">
         <img src="media/title.png" id="title" alt="Multify's logo">
         <!-- error -->
-      <div id="errorMessage" class="alert alert-danger fadeOut" style="display: none;"></div>
+      <div id="errorMessage" class="alert alert-danger hidden" style="display: none;"></div>
     </div>
     <!-- Form -->
     <div class="container" id="formContainer">
@@ -46,7 +66,7 @@
             <input type="number" class="mb-3 form-control" id="multiplierTo" placeholder="Enter a Number From 1 - 50">
           </div>
           <div class="mb-6 d-grid gap-2 d-md-flex justify-content-md-end">
-          <button type="submit" class="btn btn-warning col-md-2"><strong>Submit</strong></button>
+          <button type="submit" class="btn btn-warning col-md-2 button"><strong>Submit</strong></button>
         </div>
     </form>
     </div>
@@ -62,3 +82,4 @@
     <script src="assets/script/script.js"></script>
 </body>
 </html>
+<!-- End -->
