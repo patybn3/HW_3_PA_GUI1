@@ -1,15 +1,23 @@
+/*
+Homework 3 GUI 1 - UML
+author: Patricia Antlitz
+date: 2024-06-01
+File: style.css
+
+Copyright (c) 2024 by Patricia Antlitz.
+
+Contains styles for index.html and table.html
+-- script.js also has some
+*/
+
+/* root is necessary in order to force the page's background color which was messed up bu the 
+bootstrap form*/
 :root body {
     background-color: rgb(208, 233, 255);
 }
 
-html {
-    height: 100%; /* Set body and html height to 100% viewport height */
-    margin: 0; /* Remove any default margins */
-}
-
+/* This is the div that holds the initial form */
 .container {
-    background-color: rgb(208, 233, 255);
-    flex-direction: column; 
     padding-top: 30px;
     font-weight: 600;
     color: rgb(25, 37, 112);
@@ -24,26 +32,25 @@ nav {
     width: 100%;
 }
 
+/* image logo.png */
 #logo {
     height: 160px;
     width: 439px;
 }
 
+/* the container that holds the title image title.png */
 #titleBox {
     text-align: center;
 }
 
+/* title.png */
 #title {
     height: 55px;
     width: auto;
     margin-top: 13rem;
 }
 
-.fadeOut {
-    opacity: 1;
-    transition: opacity 0.5s ease-out;
-}
-
+/* Bootstrap danger alert */
 #errorMessage {
     position: absolute;
     top: 160px;
@@ -61,14 +68,17 @@ nav {
     pointer-events: none;
 }
 
+/* "Enter Rage" */
 h3 {
     padding-bottom: 20px;
     text-decoration: underline;
 }
 
-button {
+/* submit button */
+.button {
     text-align: right;
     font-weight: bold;
+    margin-bottom: 100px;
 }
 
 footer {
@@ -80,6 +90,7 @@ footer {
     bottom: 0;
   }
 
+/* text on footer */
 #copyright {
     margin-left: 30px; 
     color: antiquewhite;
@@ -91,6 +102,7 @@ footer {
 
 /* table.html */
 
+/* div that holds the table */
 #tableBox {
     display: flex;
     justify-content: center;
@@ -99,6 +111,7 @@ footer {
     margin: 0 30px;
 }
 
+/* will make sure the columns and rows will adjust based on the size of the content */
 #tableContent {
     width: fit-content;
     text-align: center;
@@ -108,6 +121,7 @@ table {
     width: auto;
 }
 
+/* setting first column and first row to bold */
 table thead:first-child {
     font-weight: bold;
 }
@@ -116,6 +130,7 @@ table tbody tr td:first-child {
     font-weight: bold;
 }
 
+/* "x" image, first item on fist row and first color */
 #tableImage {
     width: 25px; /* Set the width as needed */
     height: auto; /* Maintain aspect ratio */
@@ -127,14 +142,15 @@ table tbody tr td:first-child {
 
 /* Media */
 
+/* forcing button set up */
 @media screen and (max-width: 1024px) {
-    #button {
-        margin-bottom: 100px;
-        text-align: center;
+    .button {
         font-weight: normal;
+        text-align: center;
     }
 }
 
+/* adjust size of images */
 @media screen and (max-width: 700px) {
     #title {
         height: 38px;
@@ -161,3 +177,4 @@ table tbody tr td:first-child {
         text-align: center;
     }
 }
+/* end */
