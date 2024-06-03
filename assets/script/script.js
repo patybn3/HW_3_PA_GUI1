@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
 function handleSubmit(event) {
     event.preventDefault();
 
@@ -15,10 +14,10 @@ function handleSubmit(event) {
     var multiplierTo = document.getElementById("multiplierTo").value;
 
      // Check if inputs are within the specified range
-     if (multiplicandFrom < 1 || multiplicandFrom > 50 ||
-        multiplicandTo < 1 || multiplicandTo > 50 ||
-        multiplierFrom < 1 || multiplierFrom > 50 ||
-        multiplierTo < 1 || multiplierTo > 50) {
+     if (multiplicandFrom < 1 && multiplicandFrom > 50 ||
+        multiplicandTo < 1 && multiplicandTo > 50 ||
+        multiplierFrom < 1 && multiplierFrom > 50 ||
+        multiplierTo < 1 && multiplierTo > 50) {
         document.getElementById('errorMessage').innerText = "Please enter numbers between 1 and 50.";
         document.getElementById('errorMessage').classList.remove('hidden');
         document.getElementById('errorMessage').style.display = 'block';

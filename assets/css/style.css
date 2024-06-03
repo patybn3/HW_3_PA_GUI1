@@ -31,7 +31,12 @@ nav {
 
 #titleBox {
     text-align: center;
+}
 
+#title {
+    height: 55px;
+    width: auto;
+    margin-top: 13rem;
 }
 
 .fadeOut {
@@ -54,13 +59,6 @@ nav {
 #errorMessage.hidden {
     opacity: 0;
     pointer-events: none;
-}
-
-
-#title {
-    height: 55px;
-    width: auto;
-    margin-top: 13rem;
 }
 
 h3 {
@@ -125,4 +123,41 @@ table tbody tr td:first-child {
 
 #resetButton {
     margin-top: 40px;
+}
+
+/* Media */
+
+@media screen and (max-width: 1024px) {
+    #button {
+        margin-bottom: 100px;
+        text-align: center;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #title {
+        height: 38px;
+        width: auto;
+    }
+
+    #logo {
+        height: 145px;
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #title {
+        height: 34px;
+        width: auto;
+        margin-top: 10rem;
+    }
+
+    #logo {
+        height: 125px;
+        width: auto;
+        text-align: center;
+    }
 }
