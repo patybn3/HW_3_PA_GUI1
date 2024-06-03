@@ -52,23 +52,17 @@ function handleSubmit(event) {
         multiplierFrom < 1 || multiplierFrom > 50 ||
         multiplierTo < 1 || multiplierTo > 50) {
         
-        // error message
-        document.getElementById('errorMessage').innerText = "Please Enter Numbers Between 1 and 50 Only."
-        document.getElementById('errorMessage').classList.remove('hidden');
-        document.getElementById('errorMessage').style.display = 'block';
+        // error message function
+        error("Please Enter Numbers Between 1 and 50 Only.");
+        return;
+    }
 
-        // fade
-        setTimeout(function () {
-            document.getElementById('errorMessage').style.transition = 'opacity 0.5s';
-            document.getElementById('errorMessage').style.opacity = '0';
-
-            setTimeout(function() {
-                document.getElementById('errorMessage').style.display = 'none';
-                document.getElementById('errorMessage').style.opacity = '1';
-                document.getElementById('errorMessage').classList.add('hidden');
-            }, 1000);
-        }, 1000);
-
+    // if one or more fields are empty
+    if (isNaN(multiplicandFrom) || isNaN(multiplicandTo) ||
+        isNaN(multiplierFrom) || isNaN(multiplierTo)) {
+        
+        // error message function
+        error("Error. All fields must contain a number from 1 to 50.");
         return;
     }
 
@@ -100,6 +94,25 @@ function handleSubmit(event) {
         document.getElementById('formContainer').style.display = 'none';
         generateTable();
     });
+}
+
+function error(e) {
+    // error message
+    document.getElementById('errorMessage').innerText = e;
+    document.getElementById('errorMessage').classList.remove('hidden');
+    document.getElementById('errorMessage').style.display = 'block';
+
+    // fade
+    setTimeout(function () {
+        document.getElementById('errorMessage').style.transition = 'opacity 1s';
+        document.getElementById('errorMessage').style.opacity = '0';
+
+        setTimeout(function() {
+            document.getElementById('errorMessage').style.display = 'none';
+            document.getElementById('errorMessage').style.opacity = '1';
+            document.getElementById('errorMessage').classList.add('hidden');
+        }, 1000);
+    }, 2000);
 }
 
 function generateTable() {
