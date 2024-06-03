@@ -19,38 +19,46 @@
     <nav>
         <img src="media/logo.png" id="logo" alt="Multify's logo">
     </nav>
+    <!-- Page title - its an image -->
     <div id="titleBox">
         <img src="media/title.png" id="title" alt="Multify's logo">
+        <!-- error -->
+      <div id="errorMessage" class="alert alert-danger fadeOut" style="display: none;"></div>
     </div>
-    <div class="container">
-    <form class="row">
+    <!-- Form -->
+    <div class="container" id="formContainer">
+    <form class="row" id="form" onsubmit="handleSubmit(event);">
+      <h3>Enter Ranges:</h3>
         <div class="mb-3 col-md-6">
-            <label for="Multiplicant" class="form-label">Multiplicant From:</label>
-            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="Multiplicant">
+            <label for="multiplicandFrom" class="form-label">Multiplicand From:</label>
+            <input type="number" class="form-control" id="multiplicandFrom" placeholder="Enter a Number From 1 - 50">
           </div>
           <div class="mb-3 col-md-6">
-            <label for="exampleInputPassword1" class="form-label">Multiplicant To:</label>
-            <input type="number" class="form-control" id="exampleInputPassword1">
+            <label for="multiplicandTo" class="form-label">Multiplicand To:</label>
+            <input type="number" class="form-control" id="multiplicandTo" placeholder="Enter a Number From 1 - 50">
           </div>
           <div class="mb-3 col-md-6">
-            <label for="exampleInputPassword1" class="form-label">Multiplier From:</label>
-            <input type="number" class="form-control" id="exampleInputPassword1">
+            <label for="multiplierFrom" class="form-label">Multiplier From:</label>
+            <input type="number" class="form-control" id="multiplierFrom" placeholder="Enter a Number From 1 - 50">
           </div>
           <div class="mb-3 col-md-6">
-            <label for="exampleInputPassword1" class="form-label">Multiplier To:</label>
-            <input type="number" class="form-control" id="exampleInputPassword1">
+            <label for="multiplierTo" class="form-label">Multiplier To:</label>
+            <input type="number" class="mb-3 form-control" id="multiplierTo" placeholder="Enter a Number From 1 - 50">
           </div>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <button type="submit" class="btn btn-warning col-md-2">Submit</button>
+          <div class="mb-6 d-grid gap-2 d-md-flex justify-content-md-end">
+          <button type="submit" class="btn btn-warning col-md-2"><strong>Submit</strong></button>
         </div>
     </form>
     </div>
+</div>
+<div id="content">
+  <!-- Content from the second HTML file will be loaded here -->
 </div>
 <footer>
     <p id="copyright">&copy; 2024 Patricia Antlitz  -  
     <a href="https://github.com/patybn3" id="github" target="_blank">Github Page</a></p>
 </footer>
-     <!-- JavaScript script -->
-     <script src="assets/script/script.js"></script>
+    <!-- JavaScript script -->
+    <script src="assets/script/script.js"></script>
 </body>
 </html>

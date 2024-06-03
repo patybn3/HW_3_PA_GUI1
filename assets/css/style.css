@@ -31,16 +31,46 @@ nav {
 
 #titleBox {
     text-align: center;
+
 }
+
+.fadeOut {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+#errorMessage {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: auto;
+    z-index: 1;
+    opacity: 1;
+    transition: opscity 0.5s ease-out;
+}
+
+#errorMessage.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 
 #title {
     height: 55px;
-    width: 588px;
-    margin: 13rem auto 2rem;
+    width: auto;
+    margin-top: 13rem;
+}
+
+h3 {
+    padding-bottom: 20px;
+    text-decoration: underline;
 }
 
 button {
     text-align: right;
+    font-weight: bold;
 }
 
 footer {
@@ -48,7 +78,7 @@ footer {
     padding: 10px;
     text-align: left;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
   }
 
@@ -59,4 +89,40 @@ footer {
 
 #github {
     color: cyan;
+}
+
+/* table.html */
+
+#tableBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    margin: 0 30px;
+}
+
+#tableContent {
+    width: fit-content;
+    text-align: center;
+}
+
+table {
+    width: auto;
+}
+
+table thead:first-child {
+    font-weight: bold;
+}
+
+table tbody tr td:first-child {
+    font-weight: bold;
+}
+
+#tableImage {
+    width: 25px; /* Set the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#resetButton {
+    margin-top: 40px;
 }
