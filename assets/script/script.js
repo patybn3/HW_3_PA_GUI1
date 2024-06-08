@@ -18,7 +18,7 @@
  * descending order will impact the calculation. For that, we have a if statement in the code that checks if the number is smaller, and swap the numbers to the
  * desired order.
  * 
- * Range: 1 - 50
+ * Range: -50 - 50
  * 
  * Button 'Submit' generated the table as long as all values are entered and they are withing the required range
  * Button 'Reset' will go back to the initial screen to enter the values again and generate a new table
