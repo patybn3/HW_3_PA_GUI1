@@ -2,7 +2,8 @@
 ## UML, Professor Zhou, Computer Science
 ## Student: Patricia Antlitz
 ## Date: 06/01/2024
-## url: https://patybn3.github.io/HW_3_PA_GUI1/
+## url repository: https://github.com/patybn3/HW_3_PA_GUI1
+## url GitHub pages: https://patybn3.github.io/HW_3_PA_GUI1/
 
 ## Assignment:
 
